@@ -543,8 +543,8 @@ np.savetxt(file_save, Movement, fmt='%s', delimiter=',')
 # Create directory if it doesn't exist
 if os.path.exists('Run_Data/Data/Energy') == False:
     os.makedirs('Run_Data/Data/Energy')
-np.savetxt(f"Run_Data/Data/Energy/EnergyFrac{suffix}_Shufs", energyFrac, fmt='%s', delimiter=',')
-np.savetxt(f"Run_Data/Data/Energy/EnergyTot{suffix}_Shufs", energyTot, fmt='%s', delimiter=',')
+np.savetxt(f"Run_Data/Data/Energy/EnergyFrac{suffix}", energyFrac, fmt='%s', delimiter=',')
+np.savetxt(f"Run_Data/Data/Energy/EnergyTot{suffix}", energyTot, fmt='%s', delimiter=',')
 
 
 print(f"The number of iterations: {iterations}\n\n")
